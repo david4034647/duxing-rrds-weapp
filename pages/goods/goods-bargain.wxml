@@ -7,7 +7,7 @@
 
                 <view class="bargain-item-content-price">
                     <view class="bargain-item-content-price-bargained">团购价 ¥  <view class="bargain-item-content-price-bargained-integer">99</view>.00</view>
-                    <view class="bargain-item-content-price-ori">原价144.00</view>
+                    <view class="bargain-item-content-price-ori">原价{{item._source.bargainOriPrice}}</view>
                 </view>
 
                 <view class="bargain-item-content-percent">
@@ -22,7 +22,7 @@
                 <view class="bargain-item-content-opt">
                     <image class="bargain-item-content-opt-icon" src="../../assets/pages/goods/icon_kanjia.png"></image>
                     <text class="bargain-item-content-opt-count">64</text><text class="bargain-item-content-opt-label">人在砍价</text>
-                    <button class="bargain-item-content-opt-btn" size="mini" type="warn">去砍价 ></button>
+                    <view class="bargain-item-content-opt-btn" size="mini" type="warn">去砍价 ></view>
                 </view>
 
             </view>

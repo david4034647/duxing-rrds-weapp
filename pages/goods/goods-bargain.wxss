@@ -117,6 +117,8 @@
 .bargain-item-content-percent-progress-value {
     width: 100%;
     font-size: 20rpx;
+    height: 36rpx;
+    line-height: 36rpx;
     color: white;
     text-align: center;
     position: relative;
@@ -162,8 +164,15 @@
 }
 
 .bargain-item-content-opt-btn {
-    flex: none;
+    display: block;
+    
+    text-align: center;
     margin-right: 20rpx;
     width: 45%;
-
+    height: 66rpx;
+    line-height: 66rpx;
+    color: white;
+    font-size: 32rpx;
+    background-color: red;
+    border-radius: 16rpx;
 }

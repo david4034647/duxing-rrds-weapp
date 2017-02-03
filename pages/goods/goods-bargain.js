@@ -1,4 +1,6 @@
 // pages/goods/goods-bargain.js
+var common = require('../../utils/common.js')
+
 
 // 获取应用实例
 var app = getApp()
@@ -23,6 +25,12 @@ var LoadList = function(that, currentPage) {
 
         data = res.data.hits.hits
         for (var i=0; i<data.length; i++) {
+          console.log(data[i]);
+          var price = common.formatCurrency(data[i]._source.bargain_min_price);
+          console.log(price);
+
+          data[i]._source.bargainOriPrice = common.formatCurrency(data[i]._source.bargain_original_price) || 0;
+
           goodsList.push(data[i]);
         }
         that.setData({goodsList:goodsList})
